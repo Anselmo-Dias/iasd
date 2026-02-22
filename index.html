@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Igreja Adventista do Sétimo Dia | Avisos e Materiais</title>
+  <meta name="description" content="Central oficial de avisos e downloads de materiais da Igreja Adventista do Sétimo Dia.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-content">
+      <a href="#inicio" class="logo" aria-label="Ir para início">
+        <img src="logo.jpg" alt="Logo Igreja Adventista do Sétimo Dia" class="logo-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+        <span class="logo-fallback" aria-hidden="true"><i class="ph ph-church"></i></span>
+        <span class="logo-text">
+          <strong>Igreja Adventista do Sétimo Dia</strong>
+          <small>Central de Avisos e Materiais</small>
+        </span>
+      </a>
+
+      <button class="mobile-menu-btn" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="site-nav">
+        <i class="ph ph-list"></i>
+      </button>
+
+      <nav class="navbar" id="site-nav" aria-label="Navegação principal">
+        <a href="#avisos">Avisos</a>
+        <a href="#materiais">Materiais</a>
+        <a href="#escalas">Escalas</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#contato" class="btn-contact">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="hero-shape hero-shape-1" aria-hidden="true"></div>
+    <div class="hero-shape hero-shape-2" aria-hidden="true"></div>
+
+    <div class="container hero-content reveal">
+      <p class="hero-kicker">Portal Oficial</p>
+      <h1>Avisos da igreja e materiais para download em um só lugar</h1>
+      <p class="hero-lead">Aqui a comunidade acompanha comunicados importantes, agenda da semana e acessa estudos, escalas e boletins atualizados.</p>
+
+      <div class="hero-actions">
+        <a href="#avisos" class="btn-primary">Ver avisos</a>
+        <a href="#materiais" class="btn-secondary">Ir para downloads</a>
+      </div>
+
+      <div class="hero-stats" aria-label="Indicadores rápidos">
+        <article>
+          <span id="count-avisos">0</span>
+          <p>avisos ativos</p>
+        </article>
+        <article>
+          <span id="count-materiais">0</span>
+          <p>materiais disponíveis</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <main class="container main-layout">
+    <section id="avisos" class="section reveal">
+      <div class="section-header">
+        <h2>Quadro de Avisos</h2>
+        <p>Comunicados oficiais para toda a igreja.</p>
+      </div>
+
+      <div class="panel-controls">
+        <label class="search-box" for="search-avisos">
+          <i class="ph ph-magnifying-glass"></i>
+          <input id="search-avisos" type="search" placeholder="Buscar aviso por título ou conteúdo">
+        </label>
+
+        <div id="filtros-avisos" class="chips" aria-label="Filtros de aviso"></div>
+      </div>
+
+      <div id="lista-avisos" class="cards-grid"></div>
+    </section>
+
+    <section id="materiais" class="section reveal">
+      <div class="section-header">
+        <h2>Central de Downloads</h2>
+        <p>Arquivos para ministérios, células e discipulado.</p>
+      </div>
+
+      <div class="panel-controls">
+        <label class="search-box" for="search-materiais">
+          <i class="ph ph-magnifying-glass"></i>
+          <input id="search-materiais" type="search" placeholder="Buscar por nome do material">
+        </label>
+
+        <div id="filtros-materiais" class="chips" aria-label="Filtros de materiais"></div>
+      </div>
+
+      <div id="lista-materiais" class="downloads-list"></div>
+    </section>
+
+    <section id="escalas" class="section reveal">
+      <div class="section-header">
+        <h2>Escalas Mensais</h2>
+        <p>Download rápido da escala de cada ministério.</p>
+      </div>
+
+      <div id="lista-escalas" class="escalas-grid"></div>
+    </section>
+
+    <section id="agenda" class="section reveal">
+      <div class="section-header">
+        <h2>Agenda da Semana</h2>
+        <p>Programação fixa para facilitar o planejamento da igreja.</p>
+      </div>
+
+      <div id="lista-agenda" class="agenda-grid"></div>
+    </section>
+  </main>
+
+  <footer id="contato" class="footer">
+    <div class="container footer-content reveal">
+      <article>
+        <h3>Igreja Adventista do Sétimo Dia</h3>
+        <p>Levando a Palavra e cuidando de pessoas.</p>
+      </article>
+
+      <article>
+        <h4>Contato</h4>
+        <ul>
+          <li><i class="ph ph-phone"></i> (11) 98888-1122</li>
+          <li><i class="ph ph-envelope-simple"></i> contato@igreja-central-demo.org</li>
+          <li><i class="ph ph-map-pin"></i> Av. Esperança, 450 - Centro, São Paulo/SP</li>
+        </ul>
+      </article>
+
+      <article>
+        <h4>Redes</h4>
+        <div class="social-icons">
+          <a href="https://instagram.com/igreja.central.demo" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+          <a href="https://facebook.com/igreja.central.demo" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+          <a href="https://youtube.com/@igreja.central.demo" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="ph ph-youtube-logo"></i></a>
+          <a href="https://wa.me/5511988881122" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="ph ph-whatsapp-logo"></i></a>
+        </div>
+      </article>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Igreja Adventista do Sétimo Dia. Central da Comunidade.</p>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="aviso-modal-overlay" hidden>
+    <div class="modal-card" id="aviso-modal-card" role="dialog" aria-modal="true" aria-labelledby="aviso-modal-titulo">
+      <button class="modal-close" id="aviso-modal-close" type="button" aria-label="Fechar detalhes do aviso">
+        <i class="ph ph-x"></i>
+      </button>
+      <div class="modal-image-wrap" id="aviso-modal-image-wrap" hidden>
+        <img id="aviso-modal-image" src="" alt="">
+      </div>
+      <div class="modal-body">
+        <div class="modal-top">
+          <span id="aviso-modal-publico"></span>
+          <span id="aviso-modal-categoria" class="badge"></span>
+        </div>
+        <h3 id="aviso-modal-titulo"></h3>
+        <p id="aviso-modal-texto"></p>
+        <div class="modal-meta">
+          <strong id="aviso-modal-data"></strong>
+          <span><i class="ph ph-check-circle"></i> Comunicado oficial</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="escala-modal-overlay" hidden>
+    <div class="modal-card modal-image-card" role="dialog" aria-modal="true" aria-label="Visualizar imagem da escala">
+      <button class="modal-close" id="escala-modal-close" type="button" aria-label="Fechar visualização da escala">
+        <i class="ph ph-x"></i>
+      </button>
+      <div class="modal-image-wrap modal-image-only">
+        <img id="escala-modal-image" src="" alt="">
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
